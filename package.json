@@ -32,6 +32,7 @@
   "dependencies": {
     "@ajusa/lit": "^1.1.0",
     "preact": "^8.2.6",
+    "preact-cli-sw-precache": "^1.0.3",
     "preact-compat": "^3.17.0",
     "preact-markdown": "^0.5.0",
     "preact-router": "^2.5.7",
