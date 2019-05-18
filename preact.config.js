@@ -11,9 +11,7 @@ export default (config, env, helpers) => {
     // Add fast-async
     babel.plugins.push([require.resolve('fast-async'), { spec: true }]);
   }
-};
 
-export default (config) => {
   const precacheConfig = {
     staticFileGlobs: [], //empty array so nothing will be a precached at all
     clientsClaim: true, // this sw will now control all tabs of your site open
@@ -21,4 +19,4 @@ export default (config) => {
   };
 
   return preactCliSwPrecachePlugin(config, precacheConfig);
-}
+};
