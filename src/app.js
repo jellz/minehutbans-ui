@@ -23,6 +23,7 @@ export default class App extends Component {
         <Router onChange={this.handleRoute}>
           <Home path='/' />
           <PlayerLookup path='/lookup' />
+          <PlayerLookup path='/lookup/:username' />
         </Router>
       </div>
     );

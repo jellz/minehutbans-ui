@@ -9,6 +9,16 @@ export default class PlayerLookup extends Component {
     this.handleChange = this.handleChange.bind(this);
   }
 
+  componentDidMount() {
+    if (
+      this.props.username &&
+      /^[a-zA-Z0-9_]{1,16}$/.test(this.props.username)
+    ) {
+      this.setState({ username: this.props.username });
+      this.handleSubmit({ preventDefault: () => {} });
+    }
+  }
+
   state = {
     player: null,
     username: '',
