@@ -10,8 +10,7 @@
     "build": "preact build --template src/index.html",
     "serve": "preact build && preact serve",
     "dev": "preact watch --template src/index.html",
-    "lint": "eslint src",
-    "test": "jest"
+    "lint": "eslint src"
   },
   "eslintConfig": {
     "extends": "eslint-config-synacor"
@@ -24,7 +23,6 @@
     "eslint-config-synacor": "^2.0.2",
     "fast-async": "^6.3.8",
     "identity-obj-proxy": "^3.0.0",
-    "jest": "^21.2.1",
     "per-env": "^1.0.2",
     "preact-cli": "^2.1.0",
     "preact-render-spy": "^1.2.1"
